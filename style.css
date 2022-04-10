@@ -1,0 +1,224 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.header{
+    height: 60px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px 0 black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+.container{
+    width: 90%;
+    margin: 0px auto;
+    min-height: 100%;
+}
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    text-transform: uppercase;
+    color: #212121;
+    font-size: 36px;
+}
+.logo span{
+    color: #879c36;
+}
+.menu{
+    width: 50%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+}
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1.2px;
+}
+.menu-link{
+    transition-property: all;
+    transition-duration: 0.3s;
+}
+.menu-link:hover{
+    border-bottom: 2px solid #879c36;
+   
+}
+.section{
+    height: 100vh;
+    padding-top: 60px;
+}
+#home {
+    background-image:url('./bg1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-press{
+    display: inline-block;
+    color: #879c36;
+    font-size: 19px;
+    text-transform: uppercase;
+    border: solid 2px #879c36;
+    margin-top: 500px;
+    padding: 5px 20px;
+}
+#about {
+     background-color:whitesmoke;
+}
+.about-foto{
+    width: 33%;
+    height: 75vh;
+    background-image:url('./about1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -195px;
+    margin-left: 5px;
+    position: absolute;
+}
+.about-foto::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 13px;
+    top: -13px;
+    border: double 8px #879c36;
+}
+.about2{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: 50%;
+    margin-left: 88vh;
+}
+.heading{
+    color:black;
+    font-size: 23px;
+    line-height: 2.8;
+}
+.heading span{
+    color: #879c36;
+}
+.text{
+    color: black;
+    font-size: 12px;
+    line-height: 1.4;
+}
+.about-press{
+    display: inline;
+    color: #879c36;
+    font-size: 19px;
+    text-transform: uppercase;
+    line-height: 5;
+    border: 2px solid #879c36;
+    margin-top: 30px;
+    padding: 5px 20px;
+}
+#works {
+    background-image: url('./bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+a{
+    color:black;
+}
+.content{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image{
+    width: 30%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: solid 4px #879c36;
+}
+.image:nth-child(1){
+    background-image: url('./project1.png');
+}
+.image:nth-child(2){
+    background-image: url('./project2.png');
+}
+.image:nth-child(3){
+    background-image: url('./project3.png');
+}
+.image:nth-child(1)::before{
+    content: 'My project';
+    background-color: #879c36;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.image:nth-child(1):hover:before{
+    top: 0;
+}
+.image:nth-child(2)::before{
+    content: 'My project';
+    background-color: #879c36;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.image:nth-child(2):hover:before{
+    top: 0;
+}
+.image:nth-child(3)::before{
+    content: 'My project';
+    background-color: #879c36;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: opx;
+    right: 100%;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+.image:nth-child(3):hover:before{
+    right: 0;
+}
+#contact {
+    height: 95vh;
+}
+.footer{
+    height: 5vh;
+}
+.contacts-info{
+    width: 30%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.5;
+}
+.contacts-map{
+    width: 70%;
+    height: 70vh;
+}
+.bottom{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
